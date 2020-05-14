@@ -1,0 +1,68 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: Roboto;
+}
+
+a {
+  color: #ffffff  ;
+}
+
+a:hover {
+  color: #cfa834;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.home-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.card-header {
+  background: #222222;
+  color: #ffffff;
+}
+
+.header {
+  background: #222222;
+}
+
+.blog-footer{
+  padding: 1.5rem 0;
+    color: #ffffff;
+    text-align: center;
+    background-color: #222222;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #ffc107;
+}
+
+.oferta {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  margin: 23px;
+  max-width: 285px;
+  max-height: 320px;
+}
+
+.list-group-item {
+  min-height: 84px;
+  line-height: 2rem;
+}

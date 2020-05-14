@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.6">
+  <title>Uwines | Vinhos On-line</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/pricing/">
+
+  <!-- Roboto Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+  <!-- Bootstrap core CSS and JS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+  <!-- Custom styles for this template -->
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 shadow-sm header text-white fixed-top">
+    <a href="#inicio"><img src="https://image.flaticon.com/icons/svg/2722/2722540.svg" class="mr-2" style="width: 40px;"></a>
+    <a class="my-0 mr-md-auto font-weight-normal" style="font-size: 30px; text-decoration: none;" href="#inicio">Uwines</a>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2" href="#inicio">Início</a>
+      <a class="p-2" href="#ranking">Ranking</a>
+      <a class="p-2" href="#sobre">Sobre</a>
+      <a class="p-2 " href="#contato">Contato</a>
+    </nav>
+    <button class="btn btn-outline-warning " data-toggle="modal" data-target="#myModal">Logar</button>
+  </div>
+
+  <div id="inicio" class="carousel slide mt-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img class="first-slide"
+          src="https://dollarfootage.com/wp-content/uploads/2018/06/Old-wine-cellar-full-of-vintage-bottles-of-wine.jpg"
+          alt="First slide"
+          style="opacity: 60%;max-width: 1828px;max-height: 1080px;width: 100%;height: auto;top: -25vh;position: relative;">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Prazer, somos a Uwine.</h1>
+            <p>Somos apaixonados por vinho e acreditamos que o melhor vinho do mundo é aquele que harmoniza com você.
+              Por isso fazemos de tudo para descomplicar e proporcionar a melhor experiência, sempre.</p>
+            <p><a class="btn btn-lg btn-light" href="#" role="button">Veja mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="second-slide"
+          src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          alt="Second slide"
+          style="opacity: 60%;max-width: 1828px;max-height: 1080px;width: 100%;height: auto;top: -25vh;position: relative;">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Ubots Wine.</h1>
+            <p>O nosso segredo especial, o vinho da casa.</p>
+            <p><a class="btn btn-lg btn-light" href="#" role="button">Veja mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img class="third-slide" src="https://wallpapercave.com/wp/wp2878153.jpg" alt="Third slide"
+          style="opacity: 60%;max-width: 1828px;max-height: 1080px;width: 100%;height: auto;top: -25vh;position: relative;">
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Os melhores vinhos.</h1>
+            <p>Possuímos uma variação com mais de 1500 vinhos, de todos os tipos e sabores.</p>
+            <p><a class="btn btn-lg btn-light" href="#" role="button">Veja mais</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 mb-0 my-5" id="ranking">
+    <div class="card-deck text-center pb-5">
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Maior Compra Única</h4>
+        </div>
+        <div class="card-body" style="min-height: 73px" id="clienteCompraUnica">
+        </div>
+      </div>
+    </div>
+    <div class="card-deck text-center">
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Maior Valor Total</h4>
+        </div>
+        <div class="card-body px-0 py-0" id="clienteValorTotal">
+          <ul class="list-group">
+          </ul>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Clientes Fiéis</h4>
+        </div>
+        <div class="card-body px-0 py-0" id="clientesFieis">
+          <ul class="list-group">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-header container px-3 py-3 pt-5 mb-0 my-5 mx-auto text-center" id="sobre">
+    <h1 class="display-4 text-warning" style="font-size:50px">O maior e mais completo catálogo de vinhos do país.
+    </h1>
+    <p class="lead text-justify">A Uwines tem o melhor e mais completo
+      catálogo de vinhos do país. Você não encontra
+      em nenhum outro lugar um número tão grande
+      de vinhos do mais alto nível. Trata-se da
+      melhor e mais completa seleção de vinhos
+      disponível no Brasil. Muitos destes vinhos são
+      raridades dificilmente encontradas até mesmo
+      em seus países de origem. Os maiores e mais
+      consagrados nomes de cada região também
+      estão no catálogo da Mistral.</p>
+  </div>
+
+  <div class="container pt-5 mb-5 my-5" id="contato">
+    <div class="card-deck text-center">
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Contato e localização</h4>
+        </div>
+        <div class="card-body d-flex flex-column align-items-center justify-content-center" style="font-size: 22px;">
+          <p class="card-text text-dark mb-2">Av. Praia de Belas, 1212/1011 - Praia de Belas, Porto Alegre/RS</p>
+          <p class="card-text text-dark mb-2">+55 51 3508-9315</p>
+          <p class="card-text text-dark mb-2">contato@uwines.com.br</p>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Fale conosco</h4>
+        </div>
+        <div class="card-body d-flex flex-column align-items-center">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="form-group">
+              <label for="e-mail">E-mail</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <textarea class="form-control" id="assunto"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Logar</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <span class="glyphicon glyphicon-lock"></span>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none;" role="alert">
+              <strong>Usuário ou senha</strong> incorretos, tente novamente.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuário</label>
+              <input type="text" class="form-control" id="usrname">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Senha</label>
+              <input type="password" class="form-control" id="psw" placeholder="">
+            </div>
+            <div class="form-group d-flex text-dark justify-content-between">
+              <span class="align-items-start">Não tem conta? <a class="text-warning" href="#">Registrar</a></span>
+              <span class="align-items-end">Esqueceu sua <a class="text-warning" href="#">Senha?</a></span>
+            </div>
+            <button type="button" class="btn btn-default btn-success btn-block" onclick="recomendarProduto()"><span
+                class="glyphicon glyphicon-off"></span> Logar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card oferta" style="display: none;">
+    <div class="card-header" style="background: #ffc107; color: #ffffff;">
+      <span class="mr-2" id="cliente"></span>
+      <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="card-body">
+      <div class="row mb-2">
+        <img src="https://www.flaticon.com/premium-icon/icons/svg/2434/2434992.svg" style="width: 50px;margin: auto;">
+      </div>
+      <span class="card-title text-black font-weight-bold">Temos uma oferta para você:</span>
+      <ul class="list mt-2" id="lista">
+      </ul>
+      <div class="row mt-2 mb-2">
+        <button type="button" class="btn btn-warning" style="margin: auto">Comprar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="blog-footer">
+    <p>© 2020 Uwine</p>
+    <p class="font-italic">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+    </p>
+    <p class="font-italic" style="font-size: 12px;">SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS
+      ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p>
+  </footer>
+</body>
+
+<!-- Bootstrap core CSS and JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- jQuerry -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="./js/script.js"></script>
+
+</html>
